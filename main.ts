@@ -1,16 +1,16 @@
 enum DistanceEvent {
     //% block="すごく近い"
-    IsDistance = 1
+    IsDistance = 1,
     //% block="近い"
-    IsDistance2 = 2
+    IsDistance2 = 2,
     //% block="少し近い"
-    IsDistance3 = 3
+    IsDistance3 = 3,
     //% block="少し遠い"
-    IsDistance4 = 4
+    IsDistance4 = 4,
     //% block="遠い"
-    IsDistance5 = 5
+    IsDistance5 = 5,
     //% block="すごく遠い"
-    IsDistance6 = 6
+    IsDistance6 = 6,
 }
     
 //% weight=70 icon="\uf0e7" color=#d2691e block="電気の利用2"
