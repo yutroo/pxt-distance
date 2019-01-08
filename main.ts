@@ -23,7 +23,7 @@ namespace gp {
     export function turnOFF(): void {
         pins.digitalWritePin(DigitalPin.P0, 0)
     }
-    //% blockId=is_dark block="すごく近い"
+    //% blockId=is_distance block="すごく近い"
     export function isDistance(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 20) {
             return true;
@@ -31,7 +31,7 @@ namespace gp {
             return false;
         }
     }
-    //% blockId=is_distance block="近い"
+    //% blockId=is_distance2 block="近い"
     export function isDistance(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 40) {
             return true;
@@ -39,7 +39,7 @@ namespace gp {
             return false;
         }
     }
-    //% blockId=is_distance block="少し近い"
+    //% blockId=is_distance3 block="少し近い"
     export function isDistance(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 60) {
             return true;
@@ -47,7 +47,7 @@ namespace gp {
             return false;
         }
     }
-    //% blockId=is_distance block="少し遠い"
+    //% blockId=is_distance4 block="少し遠い"
     export function isDistance(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 80) {
             return true;
@@ -55,7 +55,7 @@ namespace gp {
             return false;
         }
     }
-    //% blockId=is_distance block="遠い"
+    //% blockId=is_distance5 block="遠い"
     export function isDistance(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 100) {
             return true;
@@ -63,7 +63,7 @@ namespace gp {
             return false;
         }
     }
-    //% blockId=is_distance block="すごく遠い"
+    //% blockId=is_distance6 block="すごく遠い"
     export function isDistance(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) > 100) {
             return true;
