@@ -32,7 +32,7 @@ namespace gp {
         }
     }
     //% blockId=is_distance2 block="近い"
-    export function isDistance(): boolean {
+    export function isDistance2(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 40) {
             return true;
         } else {
@@ -40,7 +40,7 @@ namespace gp {
         }
     }
     //% blockId=is_distance3 block="少し近い"
-    export function isDistance(): boolean {
+    export function isDistance3(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 60) {
             return true;
         } else {
@@ -48,7 +48,7 @@ namespace gp {
         }
     }
     //% blockId=is_distance4 block="少し遠い"
-    export function isDistance(): boolean {
+    export function isDistance4(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 80) {
             return true;
         } else {
@@ -56,7 +56,7 @@ namespace gp {
         }
     }
     //% blockId=is_distance5 block="遠い"
-    export function isDistance(): boolean {
+    export function isDistance5(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) < 100) {
             return true;
         } else {
@@ -64,10 +64,11 @@ namespace gp {
         }
     }
     //% blockId=is_distance6 block="すごく遠い"
-    export function isDistance(): boolean {
+    export function isDistance6(): boolean {
         if (grove.measureInCentimeters(DigitalPin.P0) > 100) {
             return true;
         } else {
             return false;
         }
     }
+}
